@@ -1,25 +1,31 @@
 .subreddit-list {
-  border: 1px solid black;
-  width: 30%;
+  min-width: fit-content;
+
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(225, 72, 75, 0);
+  box-shadow: 0px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(225, 72, 75, 0);
+  margin: 5px 5px 25px 5px;
 }
 
 .subreddit-list h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: black;
-  text-align: left;
-  padding: 10px 10px;
-  background-color: #e1484b;
+  text-align: center;
+  padding-top: 10px;
+  margin: 0px;
 }
 
 .categories {
   display: flex;
   justify-content: left;
   align-items: center;
+  margin: 5px 20px;
 }
 
 .categories img {
-  margin: 5px 10px;
+  margin-right: 10px;
   border: 2px solid black;
   border-radius: 100px;
 }

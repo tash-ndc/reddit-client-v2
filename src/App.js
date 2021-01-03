@@ -11,12 +11,13 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Nav />
-        <SubredditList />
-        <Switch>
-          <Route path="/subreddit/:subreddit" component={Posts} />
-          <Route path="/" exact component={Home} />
-          {/* <Route path="/subreddit" exact component={SubredditList} /> */}
-        </Switch>
+        <div className="main">
+          <SubredditList />
+          <Switch>
+            <Route path="/subreddit/:subreddit" component={Posts} />
+            <Route path="/" exact component={Home} />
+          </Switch>
+        </div>
       </div>
     </BrowserRouter>
   );

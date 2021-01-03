@@ -19,6 +19,7 @@ const SubredditList = () => {
   return (
     <div className="subreddit-list">
       <h1>SubReddits</h1>
+      <hr />
       {items.map((item) => (
         <div className="categories" key={item.data.id}>
           <img
