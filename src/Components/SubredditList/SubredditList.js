@@ -18,6 +18,7 @@ const SubredditList = () => {
 
   return (
     <div className="subreddit-list">
+      <h1>SubReddits</h1>
       {items.map((item) => (
         <div className="categories" key={item.data.id}>
           <img
@@ -25,11 +26,11 @@ const SubredditList = () => {
             style={{ height: "40px", width: "40px" }}
             alt={item.data.display_name}
           />
-          <h1>
+          <h2>
             <Link to={`/subreddit/${item.data.display_name}`}>
               {item.data.display_name}
             </Link>
-          </h1>
+          </h2>
         </div>
       ))}
     </div>
