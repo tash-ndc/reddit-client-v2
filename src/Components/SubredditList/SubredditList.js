@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "../SubredditList/SubredditList.css";
 
 const SubredditList = () => {
   useEffect(() => {
@@ -18,17 +19,17 @@ const SubredditList = () => {
   return (
     <div className="subreddit-list">
       {items.map((item) => (
-        <div>
+        <div className="categories" key={item.data.id}>
           <img
             src={item.data.icon_img}
             style={{ height: "40px", width: "40px" }}
             alt={item.data.display_name}
           />
-          <h3 key={item.data.id}>
+          <h1>
             <Link to={`/subreddit/${item.data.display_name}`}>
               {item.data.display_name}
             </Link>
-          </h3>
+          </h1>
         </div>
       ))}
     </div>
