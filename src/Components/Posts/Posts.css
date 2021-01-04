@@ -21,6 +21,12 @@
   margin: 0px;
 }
 
+.post img {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
 .author {
   color: #e1484b;
   font-size: 0.8rem;

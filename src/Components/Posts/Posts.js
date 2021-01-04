@@ -31,6 +31,7 @@ const Posts = ({ match }) => {
           <p className="author">
             <span>by</span> {item.data.author}
           </p>
+          <img src={item.data.url} alt="" />
           <p className="content">{item.data.selftext}</p>
           <hr />
           <div className="comments-upvotes">
