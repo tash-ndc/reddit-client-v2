@@ -1,17 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { SiReddit } from "react-icons/si";
 import "../Nav/Nav.css";
 
 const Nav = () => {
   return (
     <div className="Nav">
-      <h1>Nav</h1>
-      <Link to="/subreddit">
-        <h2>SR</h2>
-      </Link>
-      <Link to="/posts">
-        <h2>POSTS</h2>
-      </Link>
+      <div className="logo">
+        <SiReddit className="logo-icon" />
+        <h1>
+          Sni<span>pp</span>et
+        </h1>
+      </div>
+      <p>Reddit, minimised</p>
     </div>
   );
 };

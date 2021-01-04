@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FiSearch } from "react-icons/fi";
 import "../SubredditList/SubredditList.css";
 
 const SubredditList = () => {
@@ -19,6 +20,11 @@ const SubredditList = () => {
   return (
     <div className="subreddit-list">
       <h1>SubReddits</h1>
+      <hr />
+      <div className="searchbar">
+        <input value="search..." />
+        <FiSearch className="search-icon" />
+      </div>
       <hr />
       {items.map((item) => (
         <div className="categories" key={item.data.id}>
