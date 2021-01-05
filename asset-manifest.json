@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/reddit-client-v2/static/css/main.1ba79fa7.chunk.css",
-    "main.js": "/reddit-client-v2/static/js/main.58486f52.chunk.js",
-    "main.js.map": "/reddit-client-v2/static/js/main.58486f52.chunk.js.map",
+    "main.js": "/reddit-client-v2/static/js/main.06af6276.chunk.js",
+    "main.js.map": "/reddit-client-v2/static/js/main.06af6276.chunk.js.map",
     "runtime-main.js": "/reddit-client-v2/static/js/runtime-main.f43214d0.js",
     "runtime-main.js.map": "/reddit-client-v2/static/js/runtime-main.f43214d0.js.map",
     "static/js/2.7e0b99f9.chunk.js": "/reddit-client-v2/static/js/2.7e0b99f9.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.f43214d0.js",
     "static/js/2.7e0b99f9.chunk.js",
     "static/css/main.1ba79fa7.chunk.css",
-    "static/js/main.58486f52.chunk.js"
+    "static/js/main.06af6276.chunk.js"
   ]
 }
