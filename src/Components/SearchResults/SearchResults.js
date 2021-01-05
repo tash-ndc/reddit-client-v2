@@ -7,7 +7,7 @@ const SearchResults = ({ match }) => {
   useEffect(() => {
     const fetchItem = async () => {
       const fetchItem = await fetch(
-        `https://www.reddit.com/r/${match.params.search}.json`
+        `https://www.reddit.com/search.json?q=${match.params.search}`
       );
       const items = await fetchItem.json();
       setItem(items.data.children);

@@ -9,7 +9,7 @@ import SubredditList from "./Components/SubredditList/SubredditList";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL + "/reddit-client-v2"}>
       <div className="App">
         <Nav />
         <div className="main">
@@ -17,7 +17,7 @@ function App() {
           <Switch>
             <Route path="/subreddit/:subreddit" component={Posts} />
             <Route path="/:search" component={SearchResults} />
-            <Route path="/reddit-client-v2" component={Home} />
+            <Route path="/" exact component={Home} />
           </Switch>
         </div>
       </div>

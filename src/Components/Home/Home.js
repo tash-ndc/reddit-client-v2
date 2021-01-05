@@ -6,7 +6,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchItem = async () => {
-      const fetchItem = await fetch(`https://www.reddit.com/r/home.json`);
+      const fetchItem = await fetch(`https://www.reddit.com/r/popular.json`);
       const items = await fetchItem.json();
       setItem(items.data.children);
       // console.log(items.data.children);
