@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
-import "../Posts/Posts.css";
+import "../SearchResults/SearchResults.css";
 
-const Posts = ({ match }) => {
+const SearchResults = ({ match }) => {
   const [item, setItem] = useState([]);
 
   useEffect(() => {
     const fetchItem = async () => {
       const fetchItem = await fetch(
-        `https://www.reddit.com/r/${match.params.subreddit}.json`
+        `https://www.reddit.com/r/${match.params.search}.json`
       );
       const items = await fetchItem.json();
       setItem(items.data.children);
@@ -20,9 +20,9 @@ const Posts = ({ match }) => {
   }, [match]);
 
   return (
-    <div className="subreddit-posts">
+    <div className="searchresult-posts">
       {item.map((item) => (
-        <div className="post" key={item.data.id}>
+        <div className="result-post" key={item.data.id}>
           <h1 className="title">{item.data.title}</h1>
           <hr />
 
@@ -32,6 +32,7 @@ const Posts = ({ match }) => {
           <img src={item.data.url} alt="" />
           <p className="content">{item.data.selftext}</p>
           <hr />
+
           <p className="upvotes">
             {Math.round(item.data.upvote_ratio * 100)}% Upvoted
           </p>
@@ -41,4 +42,4 @@ const Posts = ({ match }) => {
   );
 };
 
-export default Posts;
+export default SearchResults;

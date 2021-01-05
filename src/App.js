@@ -4,6 +4,7 @@ import "./App.css";
 import Nav from "./Components/Nav/Nav";
 import Home from "./Components/Home/Home";
 import Posts from "./Components/Posts/Posts";
+import SearchResults from "./Components/SearchResults/SearchResults";
 import SubredditList from "./Components/SubredditList/SubredditList";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <SubredditList />
           <Switch>
             <Route path="/subreddit/:subreddit" component={Posts} />
+            <Route path="/:search" component={SearchResults} />
             <Route path="/" exact component={Home} />
           </Switch>
         </div>

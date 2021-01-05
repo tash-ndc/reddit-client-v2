@@ -1,10 +1,10 @@
-.subreddit-posts {
+.searchresult-posts {
   width: 100%;
   height: auto;
   margin: 5px 5px 5px 5px;
 }
 
-.post {
+.result-post {
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 10px;
@@ -14,14 +14,14 @@
   overflow-wrap: break-word;
 }
 
-.post h1 {
+.result-post h1 {
   font-weight: bold;
   font-size: 1.3rem;
   text-align: center;
   margin: 0px;
 }
 
-.post img {
+.result-post img {
   max-width: 70%;
   display: block;
   margin: 0 auto;
