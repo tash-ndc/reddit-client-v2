@@ -17,7 +17,7 @@ function App() {
           <Switch>
             <Route path="/subreddit/:subreddit" component={Posts} />
             <Route path="/:search" component={SearchResults} />
-            <Route path="/reddit-client-v2" exact component={Home} />
+            <Route path="/reddit-client-v2" component={Home} />
           </Switch>
         </div>
       </div>
