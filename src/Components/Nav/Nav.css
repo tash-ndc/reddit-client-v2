@@ -31,9 +31,9 @@
 
 .Nav p {
   text-align: center;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.04rem;
   margin-top: -5px;
-  margin-left: 35px;
+  margin-left: 34px;
   text-align: center;
 }
 
@@ -42,7 +42,6 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
-  margin-left: 55px;
 }
 
 .searchbar input {
