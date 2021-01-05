@@ -9,7 +9,7 @@ import SubredditList from "./Components/SubredditList/SubredditList";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL + "/reddit-client-v2"}>
+    <BrowserRouter basename={process.env.PUBLIC_URL + "/"}>
       <div className="App">
         <Nav />
         <div className="main">
